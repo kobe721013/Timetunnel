@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		180CD6751F88A48D0050E503 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180CD6741F88A48D0050E503 /* AppDelegate.swift */; };
-		180CD6771F88A48D0050E503 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180CD6761F88A48D0050E503 /* ViewController.swift */; };
 		180CD67A1F88A48E0050E503 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180CD6781F88A48E0050E503 /* Main.storyboard */; };
 		180CD67C1F88A48E0050E503 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 180CD67B1F88A48E0050E503 /* Assets.xcassets */; };
 		180CD67F1F88A48E0050E503 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180CD67D1F88A48E0050E503 /* LaunchScreen.storyboard */; };
+		180CD6871F88A6AA0050E503 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180CD6861F88A6AA0050E503 /* MyTableViewCell.swift */; };
+		180CD6891F88AA420050E503 /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180CD6881F88AA420050E503 /* MyTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		180CD6711F88A48D0050E503 /* Timetunnel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Timetunnel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		180CD6741F88A48D0050E503 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		180CD6761F88A48D0050E503 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		180CD6791F88A48E0050E503 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		180CD67B1F88A48E0050E503 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		180CD67E1F88A48E0050E503 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		180CD6801F88A48E0050E503 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		180CD6861F88A6AA0050E503 /* MyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyTableViewCell.swift; path = ../MyTableViewCell.swift; sourceTree = "<group>"; };
+		180CD6881F88AA420050E503 /* MyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyTableViewController.swift; path = ../MyTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +56,9 @@
 		180CD6731F88A48D0050E503 /* Timetunnel */ = {
 			isa = PBXGroup;
 			children = (
+				180CD6881F88AA420050E503 /* MyTableViewController.swift */,
+				180CD6861F88A6AA0050E503 /* MyTableViewCell.swift */,
 				180CD6741F88A48D0050E503 /* AppDelegate.swift */,
-				180CD6761F88A48D0050E503 /* ViewController.swift */,
 				180CD6781F88A48E0050E503 /* Main.storyboard */,
 				180CD67B1F88A48E0050E503 /* Assets.xcassets */,
 				180CD67D1F88A48E0050E503 /* LaunchScreen.storyboard */,
@@ -137,8 +140,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				180CD6771F88A48D0050E503 /* ViewController.swift in Sources */,
 				180CD6751F88A48D0050E503 /* AppDelegate.swift in Sources */,
+				180CD6891F88AA420050E503 /* MyTableViewController.swift in Sources */,
+				180CD6871F88A6AA0050E503 /* MyTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
