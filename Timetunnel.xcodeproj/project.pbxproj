@@ -13,6 +13,9 @@
 		180CD67F1F88A48E0050E503 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180CD67D1F88A48E0050E503 /* LaunchScreen.storyboard */; };
 		180CD6871F88A6AA0050E503 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180CD6861F88A6AA0050E503 /* MyTableViewCell.swift */; };
 		180CD6891F88AA420050E503 /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180CD6881F88AA420050E503 /* MyTableViewController.swift */; };
+		38A32886DC6EE931C2996FF4 /* Pods_Timetunnel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFE989603CBE8CE2D9069695 /* Pods_Timetunnel.framework */; };
+		CDE150761FD6734900EDF95F /* CellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE150751FD6734900EDF95F /* CellData.swift */; };
+		CDE1507A1FD79D6600EDF95F /* PhotoInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE150791FD79D6600EDF95F /* PhotoInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,8 +25,13 @@
 		180CD67B1F88A48E0050E503 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		180CD67E1F88A48E0050E503 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		180CD6801F88A48E0050E503 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		180CD6861F88A6AA0050E503 /* MyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyTableViewCell.swift; path = ../MyTableViewCell.swift; sourceTree = "<group>"; };
+		180CD6861F88A6AA0050E503 /* MyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 		180CD6881F88AA420050E503 /* MyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyTableViewController.swift; path = ../MyTableViewController.swift; sourceTree = "<group>"; };
+		97A2CFEB970E512D1CBED809 /* Pods-Timetunnel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Timetunnel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Timetunnel/Pods-Timetunnel.debug.xcconfig"; sourceTree = "<group>"; };
+		A493F5E5638E2F970AB19AEB /* Pods-Timetunnel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Timetunnel.release.xcconfig"; path = "Pods/Target Support Files/Pods-Timetunnel/Pods-Timetunnel.release.xcconfig"; sourceTree = "<group>"; };
+		CDE150751FD6734900EDF95F /* CellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellData.swift; sourceTree = "<group>"; };
+		CDE150791FD79D6600EDF95F /* PhotoInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoInfo.swift; sourceTree = "<group>"; };
+		EFE989603CBE8CE2D9069695 /* Pods_Timetunnel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Timetunnel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38A32886DC6EE931C2996FF4 /* Pods_Timetunnel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06C1C48717DE060E1B192CE9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EFE989603CBE8CE2D9069695 /* Pods_Timetunnel.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		180CD6681F88A48D0050E503 = {
 			isa = PBXGroup;
 			children = (
 				180CD6731F88A48D0050E503 /* Timetunnel */,
 				180CD6721F88A48D0050E503 /* Products */,
+				7F014AA0FA7D5CD6CABCAFB2 /* Pods */,
+				06C1C48717DE060E1B192CE9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,8 +75,9 @@
 		180CD6731F88A48D0050E503 /* Timetunnel */ = {
 			isa = PBXGroup;
 			children = (
+				CDE150781FD797C600EDF95F /* PhotoUtility */,
+				CDE150771FD7975400EDF95F /* Cell */,
 				180CD6881F88AA420050E503 /* MyTableViewController.swift */,
-				180CD6861F88A6AA0050E503 /* MyTableViewCell.swift */,
 				180CD6741F88A48D0050E503 /* AppDelegate.swift */,
 				180CD6781F88A48E0050E503 /* Main.storyboard */,
 				180CD67B1F88A48E0050E503 /* Assets.xcassets */,
@@ -67,6 +87,32 @@
 			path = Timetunnel;
 			sourceTree = "<group>";
 		};
+		7F014AA0FA7D5CD6CABCAFB2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				97A2CFEB970E512D1CBED809 /* Pods-Timetunnel.debug.xcconfig */,
+				A493F5E5638E2F970AB19AEB /* Pods-Timetunnel.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CDE150771FD7975400EDF95F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				180CD6861F88A6AA0050E503 /* MyTableViewCell.swift */,
+				CDE150751FD6734900EDF95F /* CellData.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		CDE150781FD797C600EDF95F /* PhotoUtility */ = {
+			isa = PBXGroup;
+			children = (
+				CDE150791FD79D6600EDF95F /* PhotoInfo.swift */,
+			);
+			path = PhotoUtility;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +120,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 180CD6831F88A48E0050E503 /* Build configuration list for PBXNativeTarget "Timetunnel" */;
 			buildPhases = (
+				6D8CB496D0B1FCF0DD96074E /* [CP] Check Pods Manifest.lock */,
 				180CD66D1F88A48D0050E503 /* Sources */,
 				180CD66E1F88A48D0050E503 /* Frameworks */,
 				180CD66F1F88A48D0050E503 /* Resources */,
+				E2EAE4B23B704FA31C4ABB63 /* [CP] Embed Pods Frameworks */,
+				230FB284B5337ADDEB70CFEB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -135,6 +184,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		230FB284B5337ADDEB70CFEB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Timetunnel/Pods-Timetunnel-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D8CB496D0B1FCF0DD96074E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Timetunnel-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2EAE4B23B704FA31C4ABB63 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Timetunnel/Pods-Timetunnel-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Cache/Cache.framework",
+				"${BUILT_PRODUCTS_DIR}/Gallery/Gallery.framework",
+				"${BUILT_PRODUCTS_DIR}/Hue/Hue.framework",
+				"${BUILT_PRODUCTS_DIR}/Imaginary/Imaginary.framework",
+				"${BUILT_PRODUCTS_DIR}/Lightbox/Lightbox.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cache.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Gallery.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hue.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Imaginary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lightbox.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Timetunnel/Pods-Timetunnel-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		180CD66D1F88A48D0050E503 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -143,6 +256,8 @@
 				180CD6751F88A48D0050E503 /* AppDelegate.swift in Sources */,
 				180CD6891F88AA420050E503 /* MyTableViewController.swift in Sources */,
 				180CD6871F88A6AA0050E503 /* MyTableViewCell.swift in Sources */,
+				CDE150761FD6734900EDF95F /* CellData.swift in Sources */,
+				CDE1507A1FD79D6600EDF95F /* PhotoInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +376,7 @@
 		};
 		180CD6841F88A48E0050E503 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97A2CFEB970E512D1CBED809 /* Pods-Timetunnel.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = LX7V9KZM5W;
@@ -268,12 +384,13 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kobe.Timetunnel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
 		180CD6851F88A48E0050E503 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A493F5E5638E2F970AB19AEB /* Pods-Timetunnel.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = LX7V9KZM5W;
@@ -281,7 +398,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kobe.Timetunnel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -304,6 +421,7 @@
 				180CD6851F88A48E0050E503 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

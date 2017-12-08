@@ -11,7 +11,12 @@ import UIKit
 class MyTableViewCell: UITableViewCell {
 
     @IBOutlet weak var uploadTime: UILabel!
-    @IBOutlet weak var thumbnailImageView: UIImageView!
+    @IBOutlet weak var imageView1: UIImageView!
+    
+    
+    @IBOutlet weak var imageView2: UIImageView!
+    @IBOutlet weak var imageView3: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
